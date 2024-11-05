@@ -2,6 +2,7 @@ import { useState } from "react";
 import Globe from "react-globe.gl";
 
 import Button from "../components/Button.jsx";
+import CalendlyButton from "./CalendlyButton.jsx";
 
 const About = () => {
   const [hasCopied, setHasCopied] = useState(false);
@@ -86,7 +87,8 @@ const About = () => {
                 Con clientes satisfechos en todo el mundo
               </p>
               <p className="grid-subtext">Ubicado en Chihuahua, Mexico.</p>
-              <Button name="Contactame" isBeam containerClass="w-full mt-10" />
+
+              <CalendlyButton />
             </div>
           </div>
         </div>
